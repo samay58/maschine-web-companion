@@ -1,0 +1,17 @@
+{
+  "name": "maschine-web-companion-sounds",
+  "version": "1.0.0",
+  "description": "Sound library tools for Maschine Web Companion",
+  "scripts": {
+    "download": "node download-sounds.js",
+    "process": "node process-sounds.js", 
+    "setup": "npm run install-deps && npm run download && npm run process",
+    "install-deps": "npm install node-fetch fs-extra adm-zip glob"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "fs-extra": "^10.1.0",
+    "glob": "^8.0.3",
+    "node-fetch": "^2.6.7"
+  }
+}
